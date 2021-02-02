@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerHorizontal="true"
+    >
+
+
+    <!-- Settings_Background -->
+    <View
+        android:id="@+id/settings_ba"
+        android:layout_width="409dp"
+        android:layout_height="315dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="115dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="-1dp"
+        android:background="@drawable/settings_ba"
+        />
+
+
+    <!-- Settings -->
+    <TextView
+        android:id="@+id/settings"
+        android:layout_width="214dp"
+        android:layout_height="56dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="213dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="11dp"
+        android:text="@string/settings"
+        android:textAppearance="@style/settings"
+        android:lineSpacingExtra="8sp"
+        android:gravity="center_horizontal|center_vertical"
+        />
+
+
+
+    <!-- Audio_Background_Settings_Settings_In_Game -->
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/audio_backg"
+        android:layout_width="115dp"
+        android:layout_height="36dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="135dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="82dp"
+        android:background="@drawable/audio_backg"
+        android:elevation="0dp"
+        />
+
+    <!-- Audio_Settings_In_Game -->
+    <TextView
+        android:id="@+id/audio_setti"
+        android:layout_width="70dp"
+        android:layout_height="20.16dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="158dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="90dp"
+        android:text="@string/audio_setti"
+        android:textAppearance="@style/audio_setti"
+        android:lineSpacingExtra="5sp"
+        android:gravity="center_horizontal|center_vertical"
+        />
+
+    <!-- Rectangle 39 -->
+    <View
+        android:id="@+id/rectangle_3"
+        android:layout_width="156dp"
+        android:layout_height="11dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="135dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="128dp"
+        android:background="@drawable/bar"
+        />
+
+    <!-- Ellipse 4 -->
+    <View
+        android:id="@+id/ellipse_4"
+        android:layout_width="26dp"
+        android:layout_height="22dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="235dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="123dp"
+        android:background="@drawable/ellipse"
+        />
+
+    <!-- Card -->
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/card"
+        android:layout_width="132dp"
+        android:layout_height="36dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="135dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="150dp"
+        android:background="@drawable/card"
+        android:elevation="4dp"
+        tools:ignore="DuplicateIds" />
+
+    <!-- Vibration -->
+    <TextView
+        android:id="@+id/vibration"
+        android:layout_width="115dp"
+        android:layout_height="28dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="143dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="154dp"
+        android:text="@string/vibration"
+        android:textAppearance="@style/vibration"
+        android:lineSpacingExtra="5sp"
+        android:gravity="center_horizontal|center_vertical"
+        />
+
+    <!-- Rectangle 52 -->
+    <View
+        android:id="@+id/rectangle_5"
+        android:layout_width="156dp"
+        android:layout_height="11dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="135dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="196dp"
+        android:background="@drawable/bar"
+        />
+
+    <!-- Ellipse 5 -->
+    <View
+        android:id="@+id/ellipse_5"
+        android:layout_width="26dp"
+        android:layout_height="22dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="160dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="191dp"
+        android:background="@drawable/ellipse"
+        />
+
+    <!-- Leave_Game_Background -->
+    <Button
+        android:id="@+id/card"
+        android:layout_width="132dp"
+        android:layout_height="36dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="254dp"
+        android:layout_marginTop="227dp"
+        android:background="@drawable/card"
+        android:elevation="4dp"
+        android:text="Leave Game" />
+
+    <!-- Leave Game -->
+    <TextView
+        android:id="@+id/leave_game"
+        android:layout_width="116dp"
+        android:layout_height="20dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="262dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="235dp"
+        android:text="@string/leave_game"
+        android:textAppearance="@style/leave_game"
+        android:lineSpacingExtra="5sp"
+        android:gravity="center_horizontal|center_vertical"
+        />
+
+    <!-- Return_Background -->
+    <Button
+        android:id="@+id/card"
+        android:layout_width="132dp"
+        android:layout_height="36dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="254dp"
+        android:layout_marginTop="271dp"
+        android:background="@drawable/card"
+        android:elevation="4dp"
+        android:text="Return" />
+
+    <!-- Retour -->
+    <TextView
+        android:id="@+id/retour"
+        android:layout_width="59dp"
+        android:layout_height="28dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="290dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="275dp"
+        android:text="@string/retour"
+        android:textAppearance="@style/retour"
+        android:lineSpacingExtra="5sp"
+        android:gravity="center_horizontal|center_vertical"
+        />
+</RelativeLayout>
