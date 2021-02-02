@@ -7,4 +7,5 @@
     <string name="audio_setti">Audio</string>
     <string name="leave_game">Leave Game</string>
     <string name="retour">Return</string>
+    <string name="party_config">Partie configuration</string>
 </resources>
