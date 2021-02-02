@@ -1,5 +1,11 @@
 <resources>
     <string name="app_name">SpyGame</string>
+
+    <string name="button_newgame">New game</string>
+    <string name="button_joingame">Join Game</string>
+    <string name="button_rules">Rules</string>
+    <string name="button_settings">Settings</string>
+
     <string name="textview">TextView</string>
     <string name="audio">Audio</string>
     <string name="settings">Settings</string>
@@ -8,4 +14,5 @@
     <string name="leave_game">Leave Game</string>
     <string name="retour">Return</string>
     <string name="party_config">Partie configuration</string>
+
 </resources>
