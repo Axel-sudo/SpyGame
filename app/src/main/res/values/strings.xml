@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">SpyGame</string>
+    <string name="party_config">Partie configuration</string>
 </resources>
