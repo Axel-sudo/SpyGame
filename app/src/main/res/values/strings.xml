@@ -1,4 +1,11 @@
 <resources>
     <string name="app_name">SpyGame</string>
+    <string name="textview">TextView</string>
+    <string name="audio">Audio</string>
+    <string name="settings">Settings</string>
+    <string name="vibration">Vibration</string>
+    <string name="audio_setti">Audio</string>
+    <string name="leave_game">Leave Game</string>
+    <string name="retour">Return</string>
     <string name="party_config">Partie configuration</string>
 </resources>
