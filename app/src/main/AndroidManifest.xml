@@ -9,7 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.SpyGame">
-        <activity android:name=".AgentScreen"></activity>
+        <activity android:name=".SettingsInGame"></activity>
+        <activity android:name=".Settings" />
+        <activity android:name=".AgentScreen" />
         <activity android:name=".PartyConfiguration" />
         <activity android:name=".MainActivity">
             <intent-filter>
