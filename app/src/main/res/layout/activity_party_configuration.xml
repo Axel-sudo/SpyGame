@@ -25,6 +25,18 @@
 
 
 
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="350dp"
+        android:contentDescription="logo"
+        android:layout_marginTop="50dp"
+        android:maxHeight="39dp"
+        android:minWidth="50dp"
+        android:src="@drawable/logogame2" />
+
+
     <View
         android:id="@+id/blue_team"
         android:layout_width="190dp"
@@ -139,6 +151,16 @@
         android:textColor="@color/white"
         />
 
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/logogame2"
+        android:maxWidth="300dp"
+        android:minHeight="30dp"
+        android:layout_marginLeft="100dp"
+        />
 
 
     <Button
