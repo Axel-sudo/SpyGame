@@ -8,6 +8,7 @@
     android:background="@color/background"
     tools:context=".PartyConfiguration">
 
+
     <TextView
         android:id="@+id/textPartyConfig"
         android:layout_width="wrap_content"
@@ -22,15 +23,7 @@
         tools:layout_editor_absoluteY="155dp" />
 
 
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="350dp"
-        android:contentDescription="logo"
-        android:layout_marginTop="50dp"
-        android:maxHeight="39dp"
-        android:minWidth="50dp"
-        android:src="@drawable/logoGame" />
+
 
     <View
         android:id="@+id/blue_team"
@@ -146,15 +139,7 @@
         android:textColor="@color/white"
         />
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@drawable/logoGame"
-        android:maxWidth="300dp"
-        android:minHeight="30dp"
-        android:layout_marginLeft="100dp"
-        />
+
 
     <Button
         android:id="@+id/joinAsSpy"
@@ -191,7 +176,7 @@
         android:layout_marginLeft="500dp"
         android:layout_marginTop="320dp"
         android:background="@drawable/card_curved"
-        android:text="Rejoindre en espion"
+        android:text="Rejoindre en agent"
         android:textSize="11dp"/>
 
 

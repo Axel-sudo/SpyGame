@@ -7,13 +7,7 @@
     android:background="#95684F"
     tools:context=".MainActivity">
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="313dp"
-        android:layout_height="216dp"
-        app:srcCompat="@drawable/Frame"
-        tools:layout_editor_absoluteX="239dp"
-        tools:layout_editor_absoluteY="16dp" />
+
 
     <Button
         android:id="@+id/button2"
