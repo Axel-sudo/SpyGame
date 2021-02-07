@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -9,41 +10,53 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="313dp"
-        android:layout_height="216dp"
-        tools:layout_editor_absoluteX="239dp"
-        tools:layout_editor_absoluteY="16dp"
-        /><!--app:srcCompat="@drawable/frame.xml"-->
 
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:text="@string/button_newgame"
-        tools:layout_editor_absoluteX="338dp"
-        tools:layout_editor_absoluteY="232dp" />
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        app:srcCompat="@drawable/frame"
+        android:layout_gravity="center"
+
+        />
+
+
 
     <Button
         android:id="@+id/button3"
-        android:layout_width="0dp"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:text="@string/button_joingame"
-        tools:layout_editor_absoluteX="337dp"
-        tools:layout_editor_absoluteY="280dp" />
+        android:layout_margin="10dp"
+        tools:text="@string/button_newgame"
+        android:layout_gravity="center"
+        />
+
 
     <Button
         android:id="@+id/button4"
-        android:layout_width="wrap_content"
-        android:layout_height="43dp"
-        android:text="@string/button_settings"
-        tools:layout_editor_absoluteX="342dp"
-        tools:layout_editor_absoluteY="328dp" />
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        tools:text="@string/button_joingame"
+        android:layout_gravity="center"
+        />
 
     <Button
         android:id="@+id/button5"
-        android:layout_width="0dp"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:text="@string/button_rules"
-        tools:layout_editor_absoluteX="351dp"
-        tools:layout_editor_absoluteY="369dp" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+        android:layout_margin="10dp"
+        tools:text="@string/button_settings"
+        android:layout_gravity="center"
+        />
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        tools:text="@string/button_rules"
+        android:layout_gravity="center"
+        />
+
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>
