@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -10,6 +10,20 @@
 
 
     <TextView
+        android:id="@+id/textPartyConfig"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="225dp"
+        android:layout_marginTop="5dp"
+        android:text="@string/party_config"
+        android:textStyle="bold"
+        android:textColor="#D87474"
+        android:textSize="25dp"
+        tools:layout_editor_absoluteX="291dp"
+        tools:layout_editor_absoluteY="155dp" />
+
+
+    <!-- <TextView
         android:id="@+id/textPartyConfig"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -24,27 +38,14 @@
 
 
 
-
-
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="350dp"
-        android:contentDescription="logo"
-        android:layout_marginTop="50dp"
-        android:maxHeight="39dp"
-        android:minWidth="50dp"
-        android:src="@drawable/logogame2" />
-
-
     <View
         android:id="@+id/blue_team"
         android:layout_width="190dp"
         android:layout_height="245dp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:layout_marginLeft="57dp"
-        android:layout_marginTop="138dp"
+        android:layout_marginLeft="45dp"
+        android:layout_marginTop="50dp"
         android:background="@drawable/curved" />
 
     <View
@@ -53,8 +54,8 @@
         android:layout_height="245dp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:layout_marginLeft="493dp"
-        android:layout_marginTop="138dp"
+        android:layout_marginLeft="470dp"
+        android:layout_marginTop="50dp"
         android:background="@drawable/curved2" />
 
     <EditText
@@ -152,15 +153,6 @@
         />
 
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@drawable/logogame2"
-        android:maxWidth="300dp"
-        android:minHeight="30dp"
-        android:layout_marginLeft="100dp"
-        />
 
 
     <Button
@@ -200,6 +192,6 @@
         android:background="@drawable/card_curved"
         android:text="Rejoindre en agent"
         android:textSize="11dp"/>
+-->
 
-
-</RelativeLayout>
+</LinearLayout>
