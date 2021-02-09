@@ -1,197 +1,201 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_centerHorizontal="true"
     android:background="@color/background"
-    tools:context=".PartyConfiguration">
+    tools:context=".PartyConfiguration"
+    android:orientation="vertical">
 
 
-    <TextView
+   <ImageButton
+       android:id="@+id/imageButton2"
+       android:layout_width="70dp"
+       android:layout_height="60dp"
+       app:srcCompat="@drawable/ic_exit_foreground"
+       android:background="@color/background"
+       android:layout_marginLeft="735dp"
+       android:scaleX=".5"
+       android:scaleY=".5"
+
+       />
+
+
+   <TextView
         android:id="@+id/textPartyConfig"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="225dp"
-        android:layout_marginTop="5dp"
+        android:layout_marginLeft="290dp"
+        android:layout_marginTop="65dp"
         android:text="@string/party_config"
         android:textStyle="bold"
         android:textColor="#D87474"
-        android:textSize="25dp"
+        android:textSize="18dp"
         tools:layout_editor_absoluteX="291dp"
         tools:layout_editor_absoluteY="155dp" />
 
 
-    <!-- <TextView
-        android:id="@+id/textPartyConfig"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="265dp"
-        android:layout_marginTop="95dp"
-        android:text="@string/party_config"
-        android:textStyle="bold"
-        android:textColor="#D87474"
-        android:textSize="25dp"
-        tools:layout_editor_absoluteX="291dp"
-        tools:layout_editor_absoluteY="155dp" />
+   <ImageView
+       android:id="@+id/imageView3"
+       android:layout_width="200dp"
+       android:layout_height="80dp"
+       android:scaleX=".5"
+       android:scaleY=".5"
+       android:src="@drawable/spylogo"
+       android:layout_marginLeft="260dp" />
+
+   <View
+       android:id="@+id/blue_team"
+       android:layout_width="190dp"
+       android:layout_height="255dp"
+       android:layout_alignParentLeft="true"
+       android:layout_alignParentTop="true"
+       android:layout_marginLeft="41dp"
+       android:layout_marginTop="45dp"
+       android:background="@drawable/curved" />
+
+   <View
+            android:id="@+id/red_team"
+            android:layout_width="190dp"
+            android:layout_height="255dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="500dp"
+            android:layout_marginTop="45dp"
+            android:background="@drawable/curved2" />
+
+        <EditText
+            android:id="@+id/editPseudo"
+            android:layout_width="165dp"
+            android:layout_height="40dp"
+            android:inputType="textPersonName"
+            android:text="   "
+            android:layout_marginTop="155dp"
+            android:layout_marginLeft="285dp"
+            android:background="@drawable/card_curved"
+
+            />
+
+        <TextView
+            android:id="@+id/textPseudo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="310dp"
+            android:layout_marginTop="110dp"
+            android:text="Entre ton pseudo"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/joinGame"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="280dp"
+            android:layout_marginTop="230dp"
+            android:background="@drawable/card_curved"
+            android:text="Joindre la partie" />
+
+        <!-- <TextView
+            android:id="@+id/number_blue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2"
+            android:textSize="25dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginLeft="140dp"
+            android:background="#BDBDBD"
+            /> -->
+
+       <!-- <TextView
+            android:id="@+id/number_red"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2"
+            android:textSize="25dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginLeft="580dp"
+            android:background="@color/grey"/>
+            -->
+
+        <TextView
+            android:id="@+id/spy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:layout_marginLeft="70dp"
+            android:text="Espion"
+            android:textSize="17dp"
+            android:textColor="@color/white"
+            />
+
+        <TextView
+            android:id="@+id/agent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Agent"
+            android:layout_marginTop="190dp"
+            android:layout_marginLeft="70dp"
+            android:textSize="17dp"
+            android:textColor="@color/white"
+            />
+        <TextView
+            android:id="@+id/spy_red"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:layout_marginLeft="510dp"
+            android:text="Espion"
+            android:textSize="17dp"
+            android:textColor="@color/white"
+            />
+
+        <TextView
+            android:id="@+id/agent_red"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Agent"
+            android:layout_marginTop="190dp"
+            android:layout_marginLeft="510dp"
+            android:textSize="17dp"
+            android:textColor="@color/white"
+            />
 
 
+   <Button
+       android:id="@+id/joinAsSpy"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_marginLeft="55dp"
+       android:layout_marginTop="130dp"
 
-    <View
-        android:id="@+id/blue_team"
-        android:layout_width="190dp"
-        android:layout_height="245dp"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginLeft="45dp"
-        android:layout_marginTop="50dp"
-        android:background="@drawable/curved" />
+       android:text="Rejoindre en espion"
+       android:textSize="11dp" />
+        <Button
+            android:id="@+id/joinAsAgent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="55dp"
+            android:layout_marginTop="230dp"
 
-    <View
-        android:id="@+id/red_team"
-        android:layout_width="190dp"
-        android:layout_height="245dp"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginLeft="470dp"
-        android:layout_marginTop="50dp"
-        android:background="@drawable/curved2" />
+            android:text="Rejoindre en Agent"
+            android:textSize="11dp"/>
 
-    <EditText
-        android:id="@+id/editPseudo"
-        android:layout_width="165dp"
-        android:layout_height="40dp"
-        android:inputType="textPersonName"
-        android:text=""
-        android:layout_marginTop="215dp"
-        android:layout_marginLeft="285dp"
-        android:background="@drawable/card_curved"
+        <Button
+            android:id="@+id/joinAsRedSpy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="510dp"
+            android:layout_marginTop="130dp"
+            android:text="Rejoindre en espion"
+            android:textSize="11dp"/>
+        <Button
+            android:id="@+id/joinAsRedAgent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="510dp"
+            android:layout_marginTop="225dp"
+            android:text="Rejoindre en agent"
+            android:textSize="11dp"/>
 
-        />
-
-    <TextView
-        android:id="@+id/textPseudo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="315dp"
-        android:layout_marginTop="180dp"
-        android:text="Entre ton pseudo"
-        android:textStyle="bold" />
-
-    <Button
-        android:id="@+id/joinGame"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="280dp"
-        android:layout_marginTop="300dp"
-        android:background="@drawable/card_curved"
-        android:text="Joindre la partie" />
-
-    <TextView
-        android:id="@+id/number_blue"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="2"
-        android:textSize="25dp"
-        android:layout_marginTop="150dp"
-        android:layout_marginLeft="140dp"
-        android:background="#BDBDBD"
-        />
-
-    <TextView
-        android:id="@+id/number_red"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="2"
-        android:textSize="25dp"
-        android:layout_marginTop="150dp"
-        android:layout_marginLeft="580dp"
-        android:background="@color/grey"/>
-
-    <TextView
-        android:id="@+id/spy"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="190dp"
-        android:layout_marginLeft="80dp"
-        android:text="Espion"
-        android:textSize="17dp"
-        android:textColor="@color/white"
-        />
-
-    <TextView
-        android:id="@+id/agent"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Agent"
-        android:layout_marginTop="290dp"
-        android:layout_marginLeft="80dp"
-        android:textSize="17dp"
-        android:textColor="@color/white"
-        />
-    <TextView
-        android:id="@+id/spy_red"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="190dp"
-        android:layout_marginLeft="510dp"
-        android:text="Espion"
-        android:textSize="17dp"
-        android:textColor="@color/white"
-        />
-
-    <TextView
-        android:id="@+id/agent_red"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Agent"
-        android:layout_marginTop="290dp"
-        android:layout_marginLeft="510dp"
-        android:textSize="17dp"
-        android:textColor="@color/white"
-        />
-
-
-
-
-    <Button
-        android:id="@+id/joinAsSpy"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="65dp"
-        android:layout_marginTop="220dp"
-        android:background="@drawable/card_curved"
-        android:text="Rejoindre en espion"
-        android:textSize="11dp"/>
-    <Button
-        android:id="@+id/joinAsAgent"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="65dp"
-        android:layout_marginTop="320dp"
-        android:background="@drawable/card_curved"
-        android:text="Rejoindre en Agent"
-        android:textSize="11dp"/>
-
-    <Button
-        android:id="@+id/joinAsRedSpy"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="500dp"
-        android:layout_marginTop="220dp"
-        android:background="@drawable/card_curved"
-        android:text="Rejoindre en espion"
-        android:textSize="11dp"/>
-    <Button
-        android:id="@+id/joinAsRedAgent"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="500dp"
-        android:layout_marginTop="320dp"
-        android:background="@drawable/card_curved"
-        android:text="Rejoindre en agent"
-        android:textSize="11dp"/>
--->
-
-</LinearLayout>
+</RelativeLayout>
