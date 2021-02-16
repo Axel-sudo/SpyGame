@@ -7,40 +7,124 @@
     android:layout_centerHorizontal="true"
     >
 
-    <!-- Rectangle 39 -->
+
+
+
     <View
         android:id="@+id/Screen_Background"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:background="@drawable/screen_background" />
+        android:layout_marginLeft="-15dp"
+        android:layout_marginTop="-5dp"
+        android:background="@drawable/screen_background"/>
 
-    <!-- log-in -->
 
-    <RelativeLayout
-        android:id="@+id/log_in"
-        android:layout_width="24.13dp"
-        android:layout_height="24dp"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginLeft="771dp"
-        android:layout_marginTop="29dp"
-        android:background="@drawable/log_in"/>
-        <!--android:clipToOutline="true"-->
+    <ImageView
+        android:id="@+id/spy_game"
+        android:layout_width="212dp"
+        android:layout_height="106dp"
+        android:layout_marginLeft="295dp"
+        android:layout_marginTop="0dp"
+        app:srcCompat="@drawable/spy_game"/>
 
-    <!-- Frame -->
-    <RelativeLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        android:id="@+id/frame"
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        android:background="@drawable/frame"/>
-    <!--android:clipToOutline="true"-->
-
-<!-- Card -->
+    <ImageView
+        android:id="@+id/exit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="765dp"
+        android:layout_marginTop="5dp"
+        app:srcCompat="@drawable/exit"/>
 
     <TextView
+        android:id="@+id/settings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="336dp"
+        android:layout_marginTop="98dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="@string/settings"
+        android:textAppearance="@style/settings" />
+
+    <RelativeLayout
+        android:id="@+id/card1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="29dp"
+        android:layout_marginTop="186dp"
+        android:background="@drawable/card"
+        android:elevation="0dp" />
+    <TextView
+        android:id="@+id/audio"
+        android:layout_width="98dp"
+        android:layout_height="22dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="60dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="191dp"
+        android:text="@string/audio"
+        android:textAppearance="@style/audio"
+        android:lineSpacingExtra="5sp"
+        android:gravity="center_horizontal|center_vertical"
+        />
+
+    <SeekBar
+        android:id="@+id/seekbar1"
+        android:layout_width="237dp"
+        android:layout_height="11dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="29dp"
+        android:layout_marginTop="239dp"
+        android:background="@drawable/seekbar"/>
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/card2"
+        android:layout_width="161dp"
+        android:layout_height="36dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="29dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="266dp"
+        android:background="@drawable/card"
+        android:elevation="0dp"
+        />
+
+    <TextView
+        android:id="@+id/vibration"
+        android:layout_width="98dp"
+        android:layout_height="22dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="60dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="271dp"
+        android:text="@string/vibration"
+        android:textAppearance="@style/vibration"
+        android:gravity="center_horizontal|center_vertical"
+        />
+
+    <SeekBar
+        android:id="@+id/seekbar2"
+        android:layout_width="237dp"
+        android:layout_height="11dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="29dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="319dp"
+        android:background="@drawable/seekbar"
+        />
+
+</RelativeLayout>
+
+
+
+    <!-- <TextView
         android:id="@+id/settings"
         android:layout_width="214dp"
         android:layout_height="56dp"
@@ -54,49 +138,21 @@
         android:textAppearance="@style/settings" />
 
     <RelativeLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        android:id="@+id/card"
-        android:layout_width="161dp"
-        android:layout_height="37dp"
-        android:layout_alignParentLeft="true"
-        android:layout_marginLeft="41dp"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="185dp"
-        android:background="@drawable/card"
-        android:elevation="4dp"
-        tools:ignore="DuplicateIds"
-        />
-
-    <!-- Audio -->
-    <RelativeLayout
-        android:id="@+id/card"
+        android:id="@+id/card2"
         android:layout_width="161dp"
         android:layout_height="37dp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
         android:layout_marginLeft="41dp"
-        android:layout_marginTop="187dp"
+        android:layout_marginTop="170dp"
         android:background="@drawable/card"
-        android:elevation="4dp"
-        tools:ignore="DuplicateIds" />
+        android:elevation="0dp"
+        tools:ignore="DuplicateIds" >
 
-    <TextView
-        android:id="@+id/audio"
-        android:layout_width="98dp"
-        android:layout_height="20.72dp"
-        android:layout_alignParentLeft="true"
-        android:layout_marginLeft="72dp"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="193.14dp"
-        android:text="@string/audio"
-        android:textAppearance="@style/audio"
-        android:lineSpacingExtra="5sp"
-        android:gravity="center_horizontal|center_vertical"
-        />
+    </RelativeLayout>
 
-    <!-- Rectangle 28 -->
     <View
-        android:id="@+id/rectangle_2"
+        android:id="@+id/rectangle2"
         android:layout_width="237dp"
         android:layout_height="11dp"
         android:layout_alignParentLeft="true"
@@ -106,9 +162,8 @@
         android:background="@drawable/bar"
         />
 
-    <!-- Ellipse 2 -->
     <View
-        android:id="@+id/ellipse_2"
+        android:id="@+id/ellipse2"
         android:layout_width="26dp"
         android:layout_height="22dp"
         android:layout_alignParentLeft="true"
@@ -118,38 +173,33 @@
         android:background="@drawable/ellipse"
         />
 
-    <!-- Card -->
     <RelativeLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        android:id="@+id/card"
+        android:id="@+id/card3"
         android:layout_width="161dp"
         android:layout_height="36dp"
         android:layout_alignParentLeft="true"
-        android:layout_marginLeft="41dp"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="274dp"
+        android:layout_marginLeft="42dp"
+        android:layout_marginTop="256dp"
         android:background="@drawable/card"
-        android:elevation="4dp"
-        />
+        android:elevation="0dp" >
 
-    <!-- Vibration -->
-    <TextView
-        android:id="@+id/vibration"
-        android:layout_width="98dp"
-        android:layout_height="20.16dp"
-        android:layout_alignParentLeft="true"
-        android:layout_marginLeft="72dp"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="281.92dp"
-        android:text="@string/vibration"
-        android:textAppearance="@style/vibration"
-        android:lineSpacingExtra="5sp"
-        android:gravity="center_horizontal|center_vertical"
-        />
+        <TextView
+            android:id="@+id/vibration"
+            android:layout_width="98dp"
+            android:layout_height="20.16dp"
+            android:layout_marginLeft="74dp"
+            android:layout_marginTop="281.92dp"
+            android:gravity="center_horizontal|center_vertical"
+            android:lineSpacingExtra="5sp"
+            android:text="@string/vibration"
+            android:textAppearance="@style/vibration" />
 
-    <!-- Rectangle 38 -->
+
+    </RelativeLayout>
+
     <View
-        android:id="@+id/rectangle_3"
+        android:id="@+id/rectangle3"
         android:layout_width="237dp"
         android:layout_height="11dp"
         android:layout_alignParentLeft="true"
@@ -159,9 +209,8 @@
         android:background="@drawable/bar"
         />
 
-    <!-- Ellipse 3 -->
     <View
-        android:id="@+id/ellipse_3"
+        android:id="@+id/ellipse3"
         android:layout_width="26dp"
         android:layout_height="22dp"
         android:layout_alignParentLeft="true"
@@ -171,7 +220,50 @@
         android:background="@drawable/ellipse"
         />
 
-</RelativeLayout>
+    <TextView
+        android:id="@+id/audio"
+        android:layout_width="98dp"
+        android:layout_height="20.72dp"
+        android:layout_marginLeft="74dp"
+        android:layout_marginTop="179dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:lineSpacingExtra="5sp"
+        android:text="@string/audio"
+        android:textAppearance="@style/audio" /> -->
+
+
+
+
+
+
+
+
+
+<!-- <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical"
+android:layout_margin="10dp">
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="5dp"
+    android:text="@string/settings"
+    android:textAppearance="@style/settings"
+    android:layout_gravity="center"
+    android:background="#333"
+    android:textColor="#fff"
+    />
+
+<Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:text="Button"/>
+
+</LinearLayout> -->
 
     <!-- <LinearLayout
          android:layout_width="match_parent"
