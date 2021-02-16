@@ -1,49 +1,47 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#95684F"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
     <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="313dp"
-        android:layout_height="216dp"
-        app:srcCompat="@drawable/frame"
-        tools:layout_editor_absoluteX="239dp"
-        tools:layout_editor_absoluteY="16dp" />
+        android:id="@+id/imageView2"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:scaleX=".5"
+        android:scaleY=".5"
+        android:src="@drawable/spylogo"
+        android:layout_marginLeft="250dp"
 
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:text="@string/button_newgame"
-        tools:layout_editor_absoluteX="338dp"
-        tools:layout_editor_absoluteY="232dp" />
+        />
+
 
     <Button
         android:id="@+id/button3"
-        android:layout_width="0dp"
+        android:layout_width="200dp"
         android:layout_height="wrap_content"
-        android:text="@string/button_joingame"
-        tools:layout_editor_absoluteX="337dp"
-        tools:layout_editor_absoluteY="280dp" />
+        android:layout_gravity="center"
+        android:text="@string/button_newgame" />
 
-    <Button
-        android:id="@+id/button4"
-        android:layout_width="wrap_content"
-        android:layout_height="43dp"
-        android:text="@string/button_settings"
-        tools:layout_editor_absoluteX="342dp"
-        tools:layout_editor_absoluteY="328dp" />
 
     <Button
         android:id="@+id/button5"
-        android:layout_width="0dp"
+        android:layout_width="200dp"
         android:layout_height="wrap_content"
-        android:text="@string/button_rules"
-        tools:layout_editor_absoluteX="351dp"
-        tools:layout_editor_absoluteY="369dp" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+        android:layout_gravity="center"
+
+        android:text="@string/button_settings" />
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/button_rules" />
+
+
+</LinearLayout>
