@@ -17,8 +17,11 @@
         android:layout_marginLeft="-8dp"
         android:layout_marginTop="-5dp"
         android:background="@drawable/screen_background" />
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> eb8a7926427f7ea67186bbf96c13560470b0a3bb
 
     <ImageView
         android:id="@+id/spy_game"
