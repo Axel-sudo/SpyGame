@@ -7,16 +7,16 @@
     android:layout_centerHorizontal="true"
     >
 
+
     <View
         android:id="@+id/Screen_Background"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:layout_marginLeft="-15dp"
+        android:layout_marginLeft="-8dp"
         android:layout_marginTop="-5dp"
-        android:background="@drawable/screen_background"/>
-
+        android:background="@drawable/screen_background" />
 
     <ImageView
         android:id="@+id/spy_game"
