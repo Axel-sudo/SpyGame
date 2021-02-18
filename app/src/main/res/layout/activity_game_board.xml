@@ -17,6 +17,7 @@
         android:layout_weight="1"
         android:baselineAligned="false"
         android:shrinkColumns="6"
+        android:layout_marginRight="50dp"
         android:stretchColumns="0,1,2,3,4,5">
 
 
