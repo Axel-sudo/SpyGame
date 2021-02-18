@@ -3,10 +3,13 @@ package com.example.spygame;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.util.Log;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.content.Intent;
 import android.view.View;
 import android.os.Bundle;
+import android.widget.ListView;
+import android.widget.TableLayout;
 
 import com.example.spygame.models.Mots;
 import com.google.firebase.database.DataSnapshot;
@@ -15,15 +18,23 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
+import java.util.ArrayList;
+
 public class MainActivity extends AppCompatActivity {
 
     public Button button,setting;
+
+    //Pour affichier Layout
+    private TableLayout tableLayout;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        //Afficher le tableLayout
+        tableLayout = findViewById(R.id.tableLayout);
 
         // Write a message to the database
         FirebaseDatabase database = FirebaseDatabase.getInstance();
@@ -45,9 +56,7 @@ public class MainActivity extends AppCompatActivity {
                     // Show something
                     Log.d("OurName", "Value is: " + mots.toString());
                 }
-
-
-
+                
             }
 
             @Override
@@ -84,6 +93,12 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
+
+        // A changer ou completer
+/*
+        ArrayList<String> list = new ArrayList<>();
+        ArrayAdapter adapter = new ArrayAdapter(this,list); */
+
 
     }
 }
