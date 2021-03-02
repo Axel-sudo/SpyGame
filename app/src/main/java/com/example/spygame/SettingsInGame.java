@@ -11,8 +11,8 @@ import android.widget.Button;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class SettingsInGame extends Dialog {
-
-    private Button retour, leavegame;
+    
+    private static Button retour, leavegame;
 
     public SettingsInGame(Activity activity){
         super(activity, R.style.Theme_AppCompat_Dialog);
@@ -21,9 +21,9 @@ public class SettingsInGame extends Dialog {
         this.leavegame = findViewById(R.id.leavegame);
     }
 
-    public Button getRetour() { return retour;}
+    public static Button getRetour() { return retour;}
 
-    public Button getLeavegame() { return leavegame;}
+    public static Button getLeavegame() { return leavegame;}
 
     public void build(){
         show();

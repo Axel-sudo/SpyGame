@@ -16,9 +16,11 @@ public class GameBoardActivity extends AppCompatActivity {
 
 
 
+
     /*
-    //TODO : Avoir le button des réglages dans le .xml
+    // TODO : Compléter ce qui est en commentaire en dessous
     @Override
+
     public void onClick(View view) {
         final SettingsInGame settingsInGame = new SettingsInGame(activity);
         SettingsInGame.getRetour().setOnClickListener(new View.OnClickListener() {
