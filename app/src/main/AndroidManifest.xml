@@ -8,9 +8,10 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.SpyGame">
-        <activity android:name=".GameBoardActivity"/>
-        <activity android:name=".SettingsInGame" />
+        android:theme="@style/Theme.AppCompat.NoActionBar">
+        <activity android:name=".rules" />
+        <activity android:name=".GameBoardActivity" />
+        <!--<activity android:name=".SettingsInGame" />-->
         <activity android:name=".Settings" />
         <activity android:name=".PartyConfiguration" />
         <activity android:name=".MainActivity">

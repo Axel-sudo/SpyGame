@@ -12,8 +12,6 @@ public class Settings extends AppCompatActivity {
 
     private ImageButton buttonBack;
 
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -27,13 +25,7 @@ public class Settings extends AppCompatActivity {
 
                 Intent intent = new Intent(Settings.this,MainActivity.class);
                 startActivity(intent);
-
             }
         });
-
     }
-
-
-
-
 }
