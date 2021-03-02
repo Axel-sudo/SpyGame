@@ -141,11 +141,10 @@
         android:layout_width="26dp"
         android:layout_height="22dp"
         android:layout_alignParentLeft="true"
-        android:layout_marginLeft="160dp"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="191dp"
-        android:background="@drawable/ellipse"
-        />
+        android:layout_marginLeft="243dp"
+        android:layout_marginTop="187dp"
+        android:background="@drawable/ellipse" />
 
     <Button
         android:id="@+id/card"

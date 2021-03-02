@@ -4,9 +4,7 @@ public class Mots {
     private String mot1;
     private String mot2;
 
-    public Mots() {
-
-    }
+    public Mots() {}
 
     public String getMot1() {
         return mot1;
