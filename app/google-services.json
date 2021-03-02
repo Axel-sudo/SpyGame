@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "15235315088",
+    "project_id": "spygame-3e464",
+    "storage_bucket": "spygame-3e464.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:15235315088:android:6964ae92ce476b3ea8af15",
+        "android_client_info": {
+          "package_name": "com.example.spygame"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "15235315088-7hhpnep3cpplthnbfas6u7n0flmiqdb1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyATvY0msxVN21Yqnzs4ngeyUJ1Wodys0E0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "15235315088-7hhpnep3cpplthnbfas6u7n0flmiqdb1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

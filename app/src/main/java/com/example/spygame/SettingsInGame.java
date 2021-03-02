@@ -8,15 +8,17 @@ import android.app.Dialog;
 import android.os.Bundle;
 import android.widget.Button;
 
-public class SettingsInGame extends /*AppCompatActivity,*/ Dialog {
+import androidx.appcompat.app.AppCompatActivity;
+
+public class SettingsInGame extends Dialog {
 
     private Button retour, leavegame;
 
     public SettingsInGame(Activity activity){
         super(activity, R.style.Theme_AppCompat_Dialog);
-        setContentView(R.layout.activity_settings_in_game);
-        /*this.retour = findViewById(R.id.retour);
-        this.leavegame = findViewById(R.id.leavegame);*/
+        activity.setContentView(R.layout.activity_settings_in_game);
+        this.retour = findViewById(R.id.retour);
+        this.leavegame = findViewById(R.id.leavegame);
     }
 
     public Button getRetour() { return retour;}
@@ -26,9 +28,9 @@ public class SettingsInGame extends /*AppCompatActivity,*/ Dialog {
     public void build(){
         show();
     }
-    /*@Override
+    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_settings_in_game);
-    }*/
+    }
 }
