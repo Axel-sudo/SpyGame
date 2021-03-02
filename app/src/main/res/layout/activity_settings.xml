@@ -7,15 +7,16 @@
     android:layout_centerHorizontal="true"
     >
 
+
     <View
         android:id="@+id/Screen_Background"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:layout_marginLeft="-15dp"
+        android:layout_marginLeft="-8dp"
         android:layout_marginTop="-5dp"
-        android:background="@drawable/screen_background"/>
+        android:background="@drawable/screen_background" />
 
 
     <ImageView
@@ -26,13 +27,14 @@
         android:layout_marginTop="0dp"
         app:srcCompat="@drawable/spy_game"/>
 
-    <ImageView
+    <ImageButton
         android:id="@+id/exit"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="765dp"
+        android:layout_marginLeft="700dp"
         android:layout_marginTop="5dp"
-        app:srcCompat="@drawable/exit"/>
+        app:srcCompat="@drawable/exit"
+        android:background="@color/background"/>
 
     <TextView
         android:id="@+id/settings"
@@ -236,31 +238,31 @@
 
 
 
-<!-- <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-xmlns:tools="http://schemas.android.com/tools"
-android:layout_width="match_parent"
-android:layout_height="match_parent"
-android:orientation="vertical"
-android:layout_margin="10dp">
+    <!-- <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="10dp">
 
-<TextView
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:padding="5dp"
-    android:text="@string/settings"
-    android:textAppearance="@style/settings"
-    android:layout_gravity="center"
-    android:background="#333"
-    android:textColor="#fff"
-    />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:text="@string/settings"
+        android:textAppearance="@style/settings"
+        android:layout_gravity="center"
+        android:background="#333"
+        android:textColor="#fff"
+        />
 
-<Button
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_gravity="center"
-    android:text="Button"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Button"/>
 
-</LinearLayout> -->
+    </LinearLayout> -->
 
     <!-- <LinearLayout
          android:layout_width="match_parent"
