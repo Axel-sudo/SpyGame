@@ -9,6 +9,16 @@
     android:orientation="horizontal"
     android:visibility="visible">
 
+    <ImageButton
+        android:id="@+id/imageButtonParam"
+        android:layout_width="wrap_content"
+       android:background="@color/background"
+        android:layout_weight="1"
+        android:layout_height="50dp"
+       android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        app:srcCompat="@drawable/ic_settings_foreground" />
+
     <TableLayout
         android:id="@+id/tableLayout"
         android:layout_width="501dp"
@@ -18,7 +28,7 @@
         android:layout_weight="1"
         android:baselineAligned="false"
         android:shrinkColumns="6"
-        android:layout_marginRight="50dp"
+        android:layout_marginRight="60dp"
         android:stretchColumns="0,1,2,3,4,5">
 
 
@@ -103,6 +113,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="50dp"
                 app:srcCompat="@drawable/card_curved" />
+
         </TableRow>
 
         <TableRow
@@ -145,6 +156,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="50dp"
                 app:srcCompat="@drawable/card_curved" />
+
         </TableRow>
 
         <TableRow
@@ -190,6 +202,7 @@
 
 
     </TableLayout>
+
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -242,6 +255,7 @@
 
 
     </LinearLayout>
+
 
 
 </LinearLayout>

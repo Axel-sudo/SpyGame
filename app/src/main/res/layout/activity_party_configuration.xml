@@ -94,7 +94,8 @@
             android:layout_marginLeft="280dp"
             android:layout_marginTop="230dp"
             android:background="@drawable/card_curved"
-            android:text="Joindre la partie" />
+            android:text="Joindre la partie"
+            />
 
 
 
