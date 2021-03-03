@@ -19,6 +19,7 @@ public class PartyConfiguration extends AppCompatActivity {
         setContentView(R.layout.activity_party_configuration);
 
         this.mediaPlayer = MediaPlayer.create(getApplicationContext(), R.raw.soncomposant);
+        
         buttonParty=(Button)findViewById(R.id.joinGame);
 
       buttonParty.setOnClickListener(new View.OnClickListener() {
