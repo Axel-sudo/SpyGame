@@ -12,7 +12,7 @@
     <ImageButton
         android:id="@+id/imageButtonParam"
         android:layout_width="wrap_content"
-      android:background="@color/background"
+       android:background="@color/background"
         android:layout_weight="1"
         android:layout_height="50dp"
        android:layout_marginTop="10dp"
@@ -204,13 +204,58 @@
     </TableLayout>
 
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="6"
+        android:orientation="vertical">
 
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="wrap_content"
-        android:layout_height="42dp"
-        android:layout_weight="1"
-        tools:srcCompat="@tools:sample/avatars" />
+        <ListView
+            android:id="@+id/lvConversation"
+            android:layout_width="match_parent"
+            android:layout_height="280dp"
+
+            android:divider="@null"
+            android:dividerHeight="0dp"
+            android:paddingBottom="10dp"
+            android:text="" />
+
+        <LinearLayout
+            android:id="@+id/form"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:background="#91f1f1f1"
+            android:orientation="horizontal"
+            android:paddingBottom="9dp" >
+
+
+            <EditText
+                android:id="@+id/etMessage"
+                android:layout_width="200dp"
+                android:layout_height="match_parent"
+                android:layout_alignTop="@+id/button1"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentBottom="true"
+                android:layout_toLeftOf="@+id/sendMessageButton"
+                android:layout_weight="1"
+                android:ems="10"
+                android:maxHeight="80dp" />
+
+            <Button
+                android:id="@+id/btnSendMsg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:text="Send" />
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
 
 
 </LinearLayout>

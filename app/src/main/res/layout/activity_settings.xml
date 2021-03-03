@@ -108,10 +108,22 @@
         android:gravity="center_horizontal|center_vertical"
         />
 
-    <SeekBar
+    <!--<SeekBar
         android:id="@+id/seekbar2"
         android:layout_width="237dp"
         android:layout_height="11dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="29dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="319dp"
+        android:background="@drawable/seekbar"
+        />-->
+
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Switch"
         android:layout_alignParentLeft="true"
         android:layout_marginLeft="29dp"
         android:layout_alignParentTop="true"

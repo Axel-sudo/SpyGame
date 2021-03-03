@@ -1,15 +1,14 @@
 package com.example.spygame;
 
-import androidx.appcompat.app.AppCompatActivity;
-
-import android.util.Log;
-import android.widget.ArrayAdapter;
-import android.widget.Button;
 import android.content.Intent;
-import android.view.View;
 import android.os.Bundle;
-import android.widget.ListView;
+import android.util.Log;
+import android.view.View;
+import android.widget.Button;
 import android.widget.TableLayout;
+import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.spygame.models.Mots;
 import com.google.firebase.database.DataSnapshot;
@@ -18,9 +17,8 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
-import java.util.ArrayList;
-
 public class MainActivity extends AppCompatActivity {
+
 
     public Button button,setting;
 
@@ -32,6 +30,14 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        //TODO make a toast
+
+        Toast.makeText(this, "start", Toast.LENGTH_SHORT).show();
+
+        Log.e("MyApp","Messages pour les logs");
+
+
 
         //Afficher le tableLayout
         tableLayout = findViewById(R.id.tableLayout);
