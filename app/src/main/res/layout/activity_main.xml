@@ -15,9 +15,18 @@
         android:scaleX=".5"
         android:scaleY=".5"
         android:src="@drawable/spylogo"
-        android:layout_marginLeft="250dp"
+       android:layout_gravity="center"
 
         />
+
+
+    <EditText
+        android:id="@+id/editPseudo"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:inputType="text"
+        android:background="#91f1f1f1"  />
 
 
     <Button
