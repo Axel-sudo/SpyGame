@@ -9,7 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.SpyGame">
-        <activity android:name=".GameboardActivity"></activity>
+        <activity android:name=".GameBoardActivity" />
         <activity android:name=".SettingsInGame" />
         <activity android:name=".Settings" />
         <activity android:name=".PartyConfiguration" />
