@@ -5,7 +5,6 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
-import android.widget.TableLayout;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -22,8 +21,7 @@ public class MainActivity extends AppCompatActivity {
 
     public Button button,setting;
 
-    //Pour affichier Layout
-    private TableLayout tableLayout;
+
 
 
     @Override
@@ -35,12 +33,11 @@ public class MainActivity extends AppCompatActivity {
 
         Toast.makeText(this, "start", Toast.LENGTH_SHORT).show();
 
-        Log.e("MyApp","Messages pour les logs");
+
+        Log.e("Spy","Messages pour les logs");
 
 
 
-        //Afficher le tableLayout
-        tableLayout = findViewById(R.id.tableLayout);
 
         // Write a message to the database
         FirebaseDatabase database = FirebaseDatabase.getInstance();
@@ -48,7 +45,7 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-        // Retrieve Data
+
 
         // Read from the database
    myRef.addValueEventListener(new ValueEventListener() {
@@ -94,10 +91,6 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        // A changer ou completer
-/*
-        ArrayList<String> list = new ArrayList<>();
-        ArrayAdapter adapter = new ArrayAdapter(this,list); */
 
 
     }
