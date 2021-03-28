@@ -43,10 +43,8 @@
         android:layout_height="80dp"
         android:layout_marginLeft="260dp"
 
-        android:src="@drawable/spygame" />
-
-    <View
-       android:id="@+id/blue_team"
+   <View
+       android:id="@+id/listViewAgent"
        android:layout_width="190dp"
        android:layout_height="255dp"
        android:layout_alignParentLeft="true"
@@ -55,17 +53,17 @@
        android:layout_marginTop="45dp"
        android:background="@drawable/curved" />
 
-   <View
-            android:id="@+id/red_team"
-            android:layout_width="190dp"
-            android:layout_height="255dp"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentTop="true"
-            android:layout_marginLeft="500dp"
-            android:layout_marginTop="45dp"
-            android:background="@drawable/curved2" />
+    <View
+        android:id="@+id/red_team"
+        android:layout_width="190dp"
+        android:layout_height="255dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="500dp"
+        android:layout_marginTop="45dp"
+        android:background="@drawable/curved2" />
 
-        <EditText
+    <EditText
             android:id="@+id/editPseudo"
             android:layout_width="165dp"
             android:layout_height="40dp"
@@ -86,14 +84,22 @@
             android:text="Entre ton pseudo"
             android:textStyle="bold" />
 
-        <Button
+    <Button
+        android:id="@+id/play"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="320dp"
+        android:layout_marginTop="280dp"
+        android:text="Jouer" />
+
+    <Button
             android:id="@+id/joinGame"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="280dp"
-            android:layout_marginTop="230dp"
+            android:layout_marginLeft="285dp"
+            android:layout_marginTop="215dp"
             android:background="@drawable/card_curved"
-            android:text="Joindre la partie"
+            android:text=" Enregistrer pseudo  "
             />
 
 
@@ -142,8 +148,8 @@
             />
 
 
-   <Button
-       android:id="@+id/joinAsSpy"
+   <TextView
+       android:id="@+id/listViewSpy"
        android:layout_width="wrap_content"
        android:layout_height="wrap_content"
        android:layout_marginLeft="55dp"
@@ -151,8 +157,8 @@
 
        android:text="Rejoindre en espion"
        android:textSize="11dp" />
-        <Button
-            android:id="@+id/joinAsAgent"
+        <TextView
+            android:id="@+id/textViewAgent"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="55dp"
@@ -169,7 +175,10 @@
             android:layout_marginTop="130dp"
             android:text="Rejoindre en espion"
             android:textSize="11dp"/>
-        <Button
+
+
+
+    <Button
             android:id="@+id/joinAsRedAgent"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
