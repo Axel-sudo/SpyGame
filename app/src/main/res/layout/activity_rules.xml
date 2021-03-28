@@ -9,7 +9,7 @@
     <activity android:name=".Main" android:theme="@android:style/Theme.NoTitleBar"/>
 
 
-    <ImageView
+    <ImageButton
         android:id="@+id/imageView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
