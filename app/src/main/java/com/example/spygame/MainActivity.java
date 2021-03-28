@@ -53,6 +53,7 @@ public class MainActivity extends AppCompatActivity {
             public void onDataChange(DataSnapshot dataSnapshot) {
                 for(DataSnapshot ds : dataSnapshot.getChildren()){
                    Mots mots = ds.getValue(Mots.class);
+
                 }
             }
 
