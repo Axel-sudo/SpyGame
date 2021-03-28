@@ -6,20 +6,18 @@ import android.os.Bundle;
 import android.util.Log;
 import android.widget.Button;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 import com.example.spygame.models.Mots;
 import com.example.spygame.models.Commentaire;
 
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
-
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
-
-import java.util.ArrayList;
-
 
 
 public class GameBoardActivity extends AppCompatActivity {
@@ -73,7 +71,6 @@ public class GameBoardActivity extends AppCompatActivity {
 
 
          */
-    }
 
         // Write a message to the database
 
@@ -83,6 +80,7 @@ public class GameBoardActivity extends AppCompatActivity {
 
 
         // Read from the database
+
         myRef.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
