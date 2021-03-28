@@ -1,7 +1,5 @@
 package com.example.spygame.models;
 
-import android.widget.ArrayAdapter;
-
 public class PseudoUsers {
 
 
