@@ -25,7 +25,7 @@
         android:layout_height="106dp"
         android:layout_marginLeft="295dp"
         android:layout_marginTop="0dp"
-        app:srcCompat="@drawable/spy_game"/>
+        app:srcCompat="@drawable/spygame"/>
 
     <ImageButton
         android:id="@+id/exit"
@@ -123,12 +123,11 @@
         android:id="@+id/switch1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Switch"
         android:layout_alignParentLeft="true"
         android:layout_marginLeft="29dp"
         android:layout_alignParentTop="true"
         android:layout_marginTop="319dp"
-        android:background="@drawable/seekbar"
+
         />
 
 </RelativeLayout>

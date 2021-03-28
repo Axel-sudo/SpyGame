@@ -7,18 +7,6 @@
     >
 
 
-
-    <View
-        android:id="@+id/settings_ba"
-        android:layout_width="409dp"
-        android:layout_height="315dp"
-        android:layout_alignParentLeft="true"
-        android:layout_marginLeft="115dp"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="-1dp"
-        android:background="@drawable/settings_ba"
-        />
-
     <TextView
         android:id="@+id/settings"
         android:layout_width="214dp"
@@ -60,31 +48,18 @@
         android:lineSpacingExtra="5sp"
         android:gravity="center_horizontal|center_vertical"
         />
-
-    <View
-        android:id="@+id/rectangle_3"
+    <SeekBar
+        android:id="@+id/seekbar1"
         android:layout_width="156dp"
         android:layout_height="11dp"
         android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
         android:layout_marginLeft="135dp"
-        android:layout_alignParentTop="true"
         android:layout_marginTop="128dp"
-        android:background="@drawable/seekbar"
-        />
+        android:background="@drawable/seekbar"/>
 
-    <View
-        android:id="@+id/ellipse_4"
-        android:layout_width="26dp"
-        android:layout_height="22dp"
-        android:layout_alignParentLeft="true"
-        android:layout_marginLeft="235dp"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="123dp"
-        android:background="@drawable/ellipse"
-        />
 
     <RelativeLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
         android:id="@+id/card"
         android:layout_width="132dp"
         android:layout_height="36dp"
@@ -93,8 +68,17 @@
         android:layout_alignParentTop="true"
         android:layout_marginTop="150dp"
         android:background="@drawable/card"
-        android:elevation="4dp"
-        tools:ignore="DuplicateIds" />
+        android:elevation="0dp"
+        tools:ignore="DuplicateIds" >
+
+        <View
+            android:id="@+id/settings_ba"
+            android:layout_width="409dp"
+            android:layout_height="315dp"
+            android:layout_marginLeft="115dp"
+            android:layout_marginTop="0dp"
+            android:background="@drawable/settings_ba" />
+    </RelativeLayout>
 
     <TextView
         android:id="@+id/vibration"
@@ -110,26 +94,29 @@
         android:gravity="center_horizontal|center_vertical"
         />
 
-    <View
-        android:id="@+id/rectangle_5"
-        android:layout_width="156dp"
-        android:layout_height="11dp"
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_marginLeft="135dp"
         android:layout_alignParentTop="true"
         android:layout_marginTop="196dp"
-        android:background="@drawable/seekbar"
+
         />
 
-    <View
-        android:id="@+id/ellipse_5"
-        android:layout_width="26dp"
-        android:layout_height="22dp"
+    <Button
+        android:id="@+id/rulesbutton"
+        android:layout_width="132dp"
+        android:layout_height="36dp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:layout_marginLeft="243dp"
-        android:layout_marginTop="187dp"
-        android:background="@drawable/ellipse" />
+        android:layout_marginLeft="254dp"
+        android:layout_marginTop="190dp"
+        android:background="@drawable/card"
+        android:elevation="4dp"
+        android:text="Rules" />
+
 
     <Button
         android:id="@+id/leavegame"
@@ -138,10 +125,37 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
         android:layout_marginLeft="254dp"
-        android:layout_marginTop="227dp"
+        android:layout_marginTop="231dp"
         android:background="@drawable/card"
         android:elevation="4dp"
         android:text="Leave Game" />
+
+    <Button
+        android:id="@+id/retour"
+        android:layout_width="132dp"
+        android:layout_height="36dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="254dp"
+        android:layout_marginTop="271dp"
+        android:background="@drawable/card"
+        android:elevation="4dp"
+        android:text="Return" />
+
+    <!--
+    <TextView
+        android:id="@+id/rules"
+        android:layout_width="116dp"
+        android:layout_height="20dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="262dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="235dp"
+        android:text="@string/leave_game"
+        android:textAppearance="@style/leave_game"
+        android:lineSpacingExtra="5sp"
+        android:gravity="center_horizontal|center_vertical"
+        />
 
     <TextView
         android:id="@+id/leave_game"
@@ -157,18 +171,6 @@
         android:gravity="center_horizontal|center_vertical"
         />
 
-    <Button
-        android:id="@+id/retour"
-        android:layout_width="132dp"
-        android:layout_height="36dp"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginLeft="254dp"
-        android:layout_marginTop="271dp"
-        android:background="@drawable/card"
-        android:elevation="4dp"
-        android:text="Return" />
-
     <TextView
         android:id="@+id/ret0ur"
         android:layout_width="59dp"
@@ -181,7 +183,7 @@
         android:textAppearance="@style/retour"
         android:lineSpacingExtra="5sp"
         android:gravity="center_horizontal|center_vertical"
-        />
+        /> -->
 </RelativeLayout>
 
 <!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"

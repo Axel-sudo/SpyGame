@@ -11,7 +11,7 @@ import android.widget.Button;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class SettingsInGame extends Dialog {
-    
+
     private static Button retour, leavegame;
 
     public SettingsInGame(Activity activity){
