@@ -19,7 +19,6 @@
        android:layout_marginLeft="735dp"
        android:scaleX=".5"
        android:scaleY=".5"
-
        />
 
 
@@ -28,20 +27,21 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="290dp"
-        android:layout_marginTop="65dp"
+        android:layout_marginTop="100dp"
         android:text="@string/party_config"
         android:textStyle="bold"
         android:textColor="#D87474"
         android:textSize="18dp"
         tools:layout_editor_absoluteX="291dp"
-        tools:layout_editor_absoluteY="155dp" />
+        tools:layout_editor_absoluteY="155dp"/>
 
 
     <ImageView
         android:id="@+id/imageView3"
         android:layout_width="200dp"
-        android:layout_height="80dp"
-        android:layout_marginLeft="260dp"/>
+        android:layout_height="100dp"
+        android:layout_marginLeft="265dp"
+        android:src="@drawable/spygame"/>
 
    <View
        android:id="@+id/listViewAgent"
@@ -79,9 +79,9 @@
             android:id="@+id/textPseudo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="310dp"
-            android:layout_marginTop="110dp"
-            android:text="Entre ton pseudo"
+            android:layout_marginLeft="300dp"
+            android:layout_marginTop="130dp"
+            android:text="Entrez votre pseudo"
             android:textStyle="bold" />
 
     <Button
@@ -99,7 +99,7 @@
             android:layout_marginLeft="285dp"
             android:layout_marginTop="215dp"
             android:background="@drawable/card_curved"
-            android:text=" Enregistrer pseudo  "
+            android:text="  Enregistrer pseudo  "
             />
 
 
@@ -154,37 +154,33 @@
        android:layout_height="wrap_content"
        android:layout_marginLeft="55dp"
        android:layout_marginTop="130dp"
-
        android:text="Rejoindre en espion"
-       android:textSize="11dp" />
+       android:textSize="11dp"/>
         <TextView
             android:id="@+id/textViewAgent"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="55dp"
             android:layout_marginTop="230dp"
-
             android:text="Rejoindre en Agent"
             android:textSize="11dp"/>
 
-        <Button
-            android:id="@+id/joinAsRedSpy"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="510dp"
-            android:layout_marginTop="130dp"
-            android:text="Rejoindre en espion"
-            android:textSize="11dp"/>
+    <TextView
+        android:id="@+id/listViewSpy2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="510dp"
+        android:layout_marginTop="130dp"
+        android:text="Rejoindre en espion"
+        android:textSize="11dp" />
+    <TextView
+        android:id="@+id/textViewAgent2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="510dp"
+        android:layout_marginTop="225dp"
 
-
-
-    <Button
-            android:id="@+id/joinAsRedAgent"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="510dp"
-            android:layout_marginTop="225dp"
-            android:text="Rejoindre en agent"
-            android:textSize="11dp"/>
+        android:text="Rejoindre en Agent"
+        android:textSize="11dp"/>
 
 </RelativeLayout>

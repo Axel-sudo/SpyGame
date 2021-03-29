@@ -5,14 +5,18 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_centerHorizontal="true"
+    android:background="@drawable/rules"
     >
-    <activity android:name=".Main" android:theme="@android:style/Theme.NoTitleBar"/>
+    <!--<activity android:name=".Main" android:theme="@android:style/Theme.NoTitleBar"/>-->
 
 
     <ImageButton
-        android:id="@+id/imageView"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_weight="1"
-        app:srcCompat="@drawable/rules" />
+        android:id="@+id/retour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="700dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/exit"/>
+
+
 </LinearLayout>

@@ -19,7 +19,7 @@ import com.google.firebase.database.ValueEventListener;
 public class MainActivity extends AppCompatActivity {
 
 
-    public Button button,setting;
+    public Button button,setting,rule;
 
 
 
@@ -69,7 +69,7 @@ public class MainActivity extends AppCompatActivity {
 
         button =(Button)findViewById(R.id.button3);
         setting =(Button)findViewById(R.id.button5);
-
+        rule=(Button)findViewById(R.id.button6);
 
 
         button.setOnClickListener(new View.OnClickListener() {
@@ -92,6 +92,14 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        rule.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent3 = new Intent(MainActivity.this, Rules.class);
+                startActivity(intent3);
+
+            }
+        });
 
 
     }
